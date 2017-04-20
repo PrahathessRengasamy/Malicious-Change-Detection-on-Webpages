@@ -1,0 +1,20 @@
+featureprofiler mode db output
+Reads html pages from the file specified by the path db.  Computes 11 features from the profiler paper.  Outputs into the specified file, each feature on a seperate line with all sites in a continous file.
+Modes:
+	0 - read from a json db w/ at least Body, URL
+	1 - read from directory of html files (assumes are files in the directory should be parsed)
+	everything else - does nothing
+
+Features:
+number of iframe tags				(integer)
+number of hidden elements			(integer)
+number of elements with small area 		(integer)
+number of script elements			(integer) (inline and src)
+percentage of scripting content in a page	(float)
+percentage of whitespace in a page		(float)
+presence of meta refresh tags			(true/false)
+number of embed or object tag			(integer)
+number of elements with src on external domain	(integer)
+number of included urls				(integer)
+number of characters in a page			(integer)
+

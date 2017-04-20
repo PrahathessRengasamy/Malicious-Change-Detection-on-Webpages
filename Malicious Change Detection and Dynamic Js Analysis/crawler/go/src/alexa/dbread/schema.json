@@ -1,0 +1,14 @@
+[
+	{ 
+		"Rank"	:	"string",
+ 	        "URL" 	:	"string",
+    	       	"Host"  :       "string",
+   	        "Title" :      	"string",
+             	"Description" :	 "string",
+              	"Body"	:       "string",
+      	        "Language":        "string",
+       	        "Links"  :        ["string"],
+                "Headers" :    {"key": "value"},
+	        "LastModified": ["string"]
+	 }
+]
